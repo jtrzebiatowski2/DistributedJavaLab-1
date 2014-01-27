@@ -44,11 +44,13 @@ public class WelcomeService {
         }
         return greetingMessage;
     }
-    public static void main(String[] args) {
-        WelcomeService ws = new WelcomeService();
-        
-        System.out.println(ws.getMessage("Justin"));
-    }
+    
+    
+//    public static void main(String[] args) {
+//        WelcomeService ws = new WelcomeService();
+//        
+//        System.out.println(ws.getMessage("Justin"));
+//    }
             
     
     
