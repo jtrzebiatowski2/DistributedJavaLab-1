@@ -19,16 +19,18 @@ public class WelcomeService {
     
     private int hourOfDay;
     private String greetingMessage;
-    private String name;
+    
     
     Calendar c = Calendar.getInstance();
     
     private void determineTimeOfDay(){
+        
         hourOfDay = c.get(Calendar.HOUR_OF_DAY);
+        
     }
     
     public String getMessage(String name){
-        
+       
         determineTimeOfDay();
         
         if(hourOfDay > MORNING_START_TIME && hourOfDay < AFTERNOON_START_TIME){
@@ -42,6 +44,12 @@ public class WelcomeService {
         }
         return greetingMessage;
     }
+    public static void main(String[] args) {
+        WelcomeService ws = new WelcomeService();
+        
+        System.out.println(ws.getMessage("Justin"));
+    }
+            
     
     
 }
